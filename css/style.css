@@ -13,13 +13,14 @@ body {
     font-weight: 400;
     background-color: var(--secondary-text-color);
     color: var(--primary-text-color);
+    letter-spacing: 0.03em;
 }
 
 /*Верхняя линия*/
 
 .header {
     background-color: var(--secondary-text-color);
-    border-bottom: 1px #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -41,7 +42,6 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
     margin-right: 93px;
 }
 
@@ -144,7 +144,6 @@ body {
 .features {
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     display: flex;
     justify-content: space-between;
     margin-left: -30px;
@@ -168,7 +167,6 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
     text-align: center;
     color: var(--title-text-color);
     margin-bottom: 50px;
@@ -201,7 +199,6 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
     color: var(--title-text-color);
     margin-left: 30px;
     text-align: center;
@@ -211,15 +208,20 @@ body {
     border-radius: 0px 0px 4px 4px;
 }
 
+.team-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .person-name {
     margin-bottom: 10px;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 
 .job-name {
     font-weight: 400;
     color: var(--primary-text-color);
-    padding-bottom: 30px;
+   /* padding-bottom: 30px;*/
 }
 
 /*Футер*/
@@ -235,6 +237,14 @@ body {
     flex-direction: column;
 }
 
+.logo-footer {
+    color: #000000;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
 .address {
     margin-top: 20px;
 }
@@ -247,7 +257,6 @@ body {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .address-item:not(:last-child) {
@@ -277,9 +286,11 @@ body {
 /*Портфолио*/
 
 .filter {
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100%;
     margin-left: -8px;
 }
 
@@ -292,7 +303,6 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    letter-spacing: 0.03em;
     text-align: center;
     color: var(--title-text-color);
     background-color: #F5F4FA;
@@ -309,16 +319,43 @@ body {
     color: var(--secondary-text-color);
 }
 
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+   /* margin-right: -30px;
+    margin-bottom: -30px;*/
+}
+
+.item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.item:nth-child(3n+3){
+    margin-right: -30px;
+}
+
+.card-link {
+    display: block;
+}
+
+.card-content {
+    padding: 20px 24px;
+    background-color: var(--secondary-text-color);
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
 .card-desc {
-    line-height: 2;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
 .card-text {
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
+    margin-top: 4px;
 }
 
 /*Позиционирование*/
@@ -352,57 +389,4 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-}
-
-
-
-.logo-footer {
-    color: #000000;
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-}
-
-
-
-
-
-.card {
- background-color: var(--secondary-text-color);
- box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
- border-radius: 0px 0px 4px 4px;
-}
-
-/*Позиционирование портфолио*/
-
-
-
-.card-set {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
-}
-
-.card-set > .item {
-    margin-left: 30px;
-    margin-top: 30px;
-  }
-  
-  .portfolio-card {
-    background: #FFFFFF;
-    box-sizing: border-box;
-  }
-  
-  .card-content {
-    padding: 20px 24px;
-    border: 1px solid #EEEEEE;
-  }
-  
-  .card-text {
-    margin-top: 4px;
-  }
+} 
