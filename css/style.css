@@ -343,7 +343,12 @@ body {
     height: 100%;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    color: #afb1b8;
+    fill: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: var(--accent-color);
 }
 
 .clients-icon {
