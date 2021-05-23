@@ -284,20 +284,42 @@ body {
    /* padding-bottom: 30px;*/
 }
 
-.social-items {
+.social-list {
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 0;
     margin-top: 16px;
+    height: 100%;
 }
 
-.social-link {
-    display: block;
+.social-list-item {
     width: 44px;
     height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.social-list-item-link {
+    display: block;
     padding: 12px;
-    color: #afb1b8;
     border-radius: 50%;
+    color: #AFB1B8;
+}
+
+.social-list-item-link:hover,
+.social-list-item-link:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.social-list-icon {
+    width: 20px;
+    height: 20px;
 }
 
 /*Постоянные клиенты*/
