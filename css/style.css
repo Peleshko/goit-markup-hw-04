@@ -106,7 +106,7 @@ body {
 }
 
 .link:hover .mail-icon,
-.link:focus .mail-icon:focus {
+.link:focus .mail-icon {
     fill: var(--accent-color);
 }
 
