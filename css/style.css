@@ -355,7 +355,6 @@ body {
 .clients-icon {
     width: 106px;
     height: 60px;
-    margin: 16px 32px 16px 32px;
 }
 
 .clients-link:hover .clients-icon,
@@ -447,8 +446,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-    height: 100%;
 }
 
 .footer-social-list-item {
@@ -479,12 +476,9 @@ body {
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin-left: -8px;
 }
 
-.filter-button {
+.filter-button:not(:first-child) {
     margin-left: 8px;
 }
 
@@ -526,6 +520,10 @@ body {
 
 .item:nth-child(3n+3){
     margin-right: -30px;
+}
+
+.item:nth-child(n+7){
+    margin-bottom: -30px;
 }
 
 .item-link {
